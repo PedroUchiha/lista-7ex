@@ -1,0 +1,208 @@
+import java.util.Scanner;
+
+class Main {
+  /*
+  public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        System.out.println("Os próximos 100 números inteiros são:");
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(numero + i);
+        }
+
+        scanner.close();
+    }
+}
+*/
+/*
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double A;
+        int B;
+        double produto;
+        System.out.print("Digite um número real (A): ");
+         A = scanner.nextDouble();
+        
+        System.out.print("Digite um número inteiro (B): ");
+         B = scanner.nextInt();
+
+        
+        produto = 0;
+
+        for (int i = 0; i < Math.abs(B); i++) {
+            produto += A;
+        }
+
+        if (B < 0) {
+            produto = -produto;
+        }
+      
+        System.out.println("O produto de A e B (A * B) é: " + produto);
+
+      
+    }
+}
+*/
+/*
+    Double massa;
+    Double perda = 0.25;
+    Double tempo;
+    Double temp;
+    
+    System.out.println("Informe o valor da massa a ser calculado:");
+    massa = entrada.nextDouble();
+    temp = massa;
+    for(int tempo = 0;massa > 0.10; tempo +=30){System.out.println();}
+    */
+/*
+    int produtoImpares = 1;
+        int somaPares = 0;
+        boolean encontrouImpar = false;
+
+        while (true) {
+            System.out.print("Digite um número inteiro positivo (ou um negativo para sair): ");
+            int numero = entrada.nextInt();
+
+            if (numero < 0) {
+                break;
+            }
+
+            if (numero % 2 == 0) {
+                somaPares += numero;
+            } else {
+                produtoImpares *= numero;
+                encontrouImpar = true;
+            }
+        }
+
+        if (encontrouImpar) {
+            System.out.println("Produto dos números ímpares: " + produtoImpares);
+        } else {
+            System.out.println("Nenhum número ímpar foi inserido.");
+        }
+        System.out.println("Soma dos números pares: " + somaPares);
+        
+        entrada.close();
+        */
+
+/*
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int quantidadeMaiores50 = 0;
+        double somaAlturas10a20 = 0;
+        int contagemAlturas10a20 = 0;
+        int quantidadeInferior40 = 0;
+        int totalPessoas = 10;
+
+     
+        for (int i = 1; i <= totalPessoas; i++) {
+            System.out.print("Digite a idade da pessoa " + i + ": ");
+            int idade = scanner.nextInt();
+
+            System.out.print("Digite a altura da pessoa " + i + " (em metros): ");
+            double altura = scanner.nextDouble();
+
+            System.out.print("Digite o peso da pessoa " + i + " (em quilos): ");
+            double peso = scanner.nextDouble();
+
+          
+            if (idade > 50) {
+                quantidadeMaiores50++;
+            }
+
+            if (idade >= 10 && idade <= 20) {
+                somaAlturas10a20 += altura;
+                contagemAlturas10a20++;
+            }
+          
+            if (peso < 40) {
+                quantidadeInferior40++;
+            }
+        }
+
+        
+        System.out.println("Quantidade de pessoas com idade superior a 50 anos: " + quantidadeMaiores50);
+
+        if (contagemAlturas10a20 > 0) {
+            double mediaAlturas10a20 = somaAlturas10a20 / contagemAlturas10a20;
+            System.out.println("Média das alturas das pessoas com idade entre 10 e 20 anos: " + mediaAlturas10a20);
+        } else {
+            System.out.println("Não há pessoas com idade entre 10 e 20 anos.");
+        }
+
+        double porcentagemInferior40 = (quantidadeInferior40 / (double) totalPessoas) * 100;
+        System.out.println("Porcentagem de pessoas com peso inferior a 40 quilos: " + porcentagemInferior40 + "%");
+
+        scanner.close();
+    }
+}
+*/
+  
+  /*
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        int killsTotal = 0;
+        int deathsTotal = 0;
+        int assistsTotal = 0;
+
+        while (true) {
+           
+            System.out.print("Há um vencedor? (s/n): ");
+            String vencedor = scanner.next();
+
+          
+            if (vencedor.equalsIgnoreCase("s")) {
+                System.out.println("O campeonato terminou.");
+                break;
+            }
+
+            
+            System.out.print("Digite o número de kills: ");
+            int kills = scanner.nextInt();
+            System.out.print("Digite o número de deaths: ");
+            int deaths = scanner.nextInt();
+            System.out.print("Digite o número de assists: ");
+            int assists = scanner.nextInt();
+
+            
+            killsTotal += kills;
+            deathsTotal += deaths;
+            assistsTotal += assists;
+
+           
+            if (killsTotal <= 5) {
+                System.out.println("noob");
+            } else if (killsTotal >= 20) {
+                System.out.println("master");
+            }
+
+            if (deathsTotal >= 20) {
+                System.out.println("Houston, we have a problem");
+            }
+
+            if (assistsTotal >= 20) {
+                System.out.println("team work");
+            }
+
+            
+            System.out.println("Kills totais: " + killsTotal);
+            System.out.println("Deaths totais: " + deathsTotal);
+            System.out.println("Assists totais: " + assistsTotal);
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+*/
+  
